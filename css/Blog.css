@@ -1,0 +1,78 @@
+.Blog {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.mainBlog {
+	width: 50%;
+	min-width: 300px;
+	align-items: center;
+	height: 100%;
+}
+.mainBlog > img {
+	height: 100%;
+	width: 100%;
+	min-height: 50%;
+}
+
+.BlogText {
+	max-width: 350px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 4rem 2rem;
+}
+.BlogText > h4 {
+	text-transform: uppercase;
+	line-height: 3rem;
+}
+
+.FirstBlog {
+	margin-left: auto;
+}
+
+.BlogText > p {
+	text-align: justify;
+}
+
+.FstBlog {
+	background-color: #dbdbdb;
+}
+
+.SndBlog {
+	background-color: #181818;
+	color: #cecece;
+}
+
+/* .firstImage { */
+/* margin-top: 2rem; */
+/* } */
+
+@media screen and (max-width: 800px) {
+	.BlogText {
+		max-width: 270px;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.Blog {
+		display: flex;
+		flex-direction: column;
+	}
+	.mainBlog {
+		width: 100%;
+		height: 100%;
+	}
+	.mainBlog > img {
+		height: 250px;
+		width: 100%;
+		object-fit: cover;
+	}
+	.BlogText {
+		max-width: 100vw;
+		width: 90%;
+		margin: 1rem;
+	}
+}

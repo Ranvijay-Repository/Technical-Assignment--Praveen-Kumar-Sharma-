@@ -1,0 +1,132 @@
+.homeContainer {
+	width: auto !important;
+	height: 70vh;
+	background-image: url("../images/banner-image.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.homeItems {
+	width: 100vw;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+}
+.homeItems > h1 {
+	font-size: 3rem;
+	font-weight: lighter;
+	text-transform: uppercase;
+	color: #fff;
+	line-height: 3.5rem;
+}
+.homeItems > p {
+	color: #fff8f8;
+	line-height: 2rem;
+	margin: 1rem;
+}
+.HomeButton {
+	padding: 1rem 2rem;
+	background-color: #000;
+	color: #fff;
+	border-radius: 3px;
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.HomeButton:hover + .HomeButton > .arrowSymbol {
+	display: block;
+	/* transition: width 2s linear 1s; */
+}
+.HomeButton:hover {
+	background-color: #fff;
+	color: #000;
+	transition: all 0.3s ease-in-out;
+}
+.buttonSetting {
+	display: flex;
+}
+
+:active,
+:hover,
+:focus {
+	outline: 0 !important;
+	outline-offset: 0;
+}
+::before,
+::after {
+	position: absolute;
+	content: "";
+}
+
+.btn-holder {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 1000px;
+	margin: 10px auto 35px;
+}
+.btn {
+	position: relative;
+	display: inline-block;
+	width: auto;
+	height: auto;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	margin: 0px 25px 15px;
+	min-width: 150px;
+}
+.btn span {
+	position: relative;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 15px 20px;
+	transition: 0.3s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*--- btn-1 ---*/
+.btn-1::before {
+	background-color: rgb(28, 31, 30);
+	transition: 0.3s ease-out;
+}
+.btn-1 span {
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(28, 31, 30);
+	transition: 0.2s 0.1s;
+}
+.btn-1 span:hover {
+	color: rgb(28, 31, 30);
+	transition: 0.2s 0.1s;
+}
+
+/* 1.hover-filled-slide-down */
+.btn.hover-filled-slide-down::before {
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+}
+.btn.hover-filled-slide-down:hover::before {
+	height: 0%;
+}
+
+@media screen and (max-width: 330px) {
+	.homeItems > h1 {
+		font-size: 2rem;
+	}
+}

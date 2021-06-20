@@ -1,0 +1,57 @@
+.AboutSection {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	min-height: 30vh;
+	/* max-height: 40vh; */
+	background-image: linear-gradient(to right, #f5f4f4, #c0c0c0);
+}
+.aboutSectionDivs {
+	width: 100%;
+	height: 100%;
+	max-width: 300px;
+	min-width: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	line-height: 2rem;
+	padding: 3.7rem;
+}
+
+.aboutSectionDivs > .heading {
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 3rem;
+}
+.subheading {
+	font-weight: 300;
+	line-height: 1.5rem;
+}
+.divLeft {
+	background-color: #ececec;
+}
+.divCenter {
+	background-color: #e4e4e4;
+}
+.divRight {
+	background-color: #cacaca;
+}
+.aboutSectionButtones {
+	font-weight: bold;
+	padding: 1rem 2rem;
+}
+
+.subheading {
+	color: #707070;
+}
+
+@media screen and (max-width: 900px) {
+	.AboutSection {
+		background-image: linear-gradient(to bottom, #f5f4f4, #c0c0c0);
+	}
+}
